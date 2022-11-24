@@ -1,0 +1,5 @@
+version: '3.7'
+services:
+  web:
+    environment:
+      KEEP_RUN_WEB: cd /app/src; uwsgi --plugins http,psgi --http :80 --http-modifier1 5 --threads 8 --processes 4 --psgi bin/app.psgi
