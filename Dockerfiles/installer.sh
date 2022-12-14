@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir /tmp/setup
 cd /tmp/setup
 wget https://projects.unbit.it/downloads/uwsgi-latest.tar.gz -cO _
