@@ -1,0 +1,5 @@
+version: '3.7'
+services:
+  web:
+    environment:
+      KEEP_RUN_UWSGI_LOG_ROUTATE: logrotate -f /app/src/config/uwsgi-for-psgi/logrotate.conf; sleep 86400
