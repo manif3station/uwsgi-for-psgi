@@ -4,3 +4,5 @@ services:
     working_dir: /app/src
     environment:
       KEEP_RUN_WEB: uwsgi --ini /app/src/config/uwsgi-for-psgi/web.conf
+    volumes:
+      - /var/log/uwsgi
